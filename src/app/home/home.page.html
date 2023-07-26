@@ -1,20 +1,75 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>RUTS App</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="intro">
+    <ion-img src="./assets/BgRutsApp.png" alt="ภูมิพลังปัญญา"> </ion-img>
+    <!-- <div id="logo">
+      <ion-img
+        src="https://www.rmutsv.ac.th/ruts/wp-content/uploads/2023/05/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2.png"
+        id="logo-img"
+      ></ion-img>
+    </div> -->
   </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-card>
+            <img src="./assets/student.png" />
+            <ion-card-header>
+              <ion-card-subtitle>Student</ion-card-subtitle>
+              <ion-card-title>นักศึกษา</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-card routerLink="/login">
+            <img src="./assets/employee.png" />
+            <ion-card-header>
+              <ion-card-subtitle>Employee</ion-card-subtitle>
+              <ion-card-title>บุคลากร</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-card>
+            <img src="./assets/general.png" />
+            <ion-card-header>
+              <ion-card-subtitle>Visitor</ion-card-subtitle>
+              <ion-card-title>บุคลทั่วไป</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-card (click)="openCapacitorSite()">
+            <img src="./assets/service.png" />
+            <ion-card-header>
+              <ion-card-subtitle>Service</ion-card-subtitle>
+              <ion-card-title>บริการข้อมูล</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- <div *ngFor="let item of data">{{item.system_name}}</div> -->
 </ion-content>
+
+<ion-footer class="footer-color">
+  <ion-toolbar>
+    <ion-title>Power by : ARIT 2023</ion-title>
+  </ion-toolbar>
+</ion-footer>
