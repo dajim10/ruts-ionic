@@ -19,7 +19,9 @@
     <ion-row>
       <ion-col>
         <div>
-          <ion-card>
+          <ion-card
+            (click)="openCapacitorSite('https://e-service.rmutsv.ac.th/')"
+          >
             <img src="./assets/student.png" />
             <ion-card-header>
               <ion-card-subtitle>Student</ion-card-subtitle>
@@ -30,7 +32,9 @@
       </ion-col>
       <ion-col>
         <div>
-          <ion-card routerLink="/login">
+          <ion-card
+            (click)="openCapacitorSite('https://e-service.rmutsv.ac.th/')"
+          >
             <img src="./assets/employee.png" />
             <ion-card-header>
               <ion-card-subtitle>Employee</ion-card-subtitle>
@@ -43,7 +47,9 @@
     <ion-row>
       <ion-col>
         <div>
-          <ion-card>
+          <ion-card
+            (click)="openCapacitorSite('https://www.rmutsv.ac.th/ruts')"
+          >
             <img src="./assets/general.png" />
             <ion-card-header>
               <ion-card-subtitle>Visitor</ion-card-subtitle>
@@ -54,7 +60,7 @@
       </ion-col>
       <ion-col>
         <div>
-          <ion-card (click)="openCapacitorSite()">
+          <ion-card (click)="openCapacitorSite('https://mis.rmutsv.ac.th')">
             <img src="./assets/service.png" />
             <ion-card-header>
               <ion-card-subtitle>Service</ion-card-subtitle>

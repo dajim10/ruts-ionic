@@ -15,8 +15,8 @@ export class HomePage implements OnInit {
     // this.openInAppBrowser();
   }
 
-  openCapacitorSite = async () => {
-    await Browser.open({ url: 'https://ruts.rmutsv.ac.th/' });
+  openCapacitorSite = async (url: any) => {
+    await Browser.open({ url: url });
   };
 
   ngOnInit() {
